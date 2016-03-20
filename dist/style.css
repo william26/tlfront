@@ -1,0 +1,77 @@
+body {
+  font-family: Helvetica; }
+
+.todo-inputs__button, .todo__delete-button, .todo__delete-button--disabled {
+  border: 0;
+  display: block;
+  color: #fff; }
+
+.todo-inputs__button, .todo__delete-button {
+  background: #294f8a;
+  transition: background 0.2s;
+  cursor: pointer; }
+
+.todo-inputs__button:hover, .todo__delete-button:hover {
+  background: #416398; }
+
+.todo__delete-button--disabled {
+  background: #e7e9ec; }
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.todo-inputs {
+  display: flex;
+  margin-bottom: 2rem;
+  width: 15rem; }
+
+.todo-inputs__input {
+  display: flex;
+  background: #e7e9ec;
+  padding: 0.5rem;
+  flex: 1; }
+
+.todo-inputs__input input {
+  background: none;
+  border: 0;
+  outline: none;
+  flex: 1; }
+
+.todo-inputs__button {
+  flex: 0 0 3rem; }
+
+.todo-list {
+  display: flex;
+  flex-direction: column; }
+
+.todo-list__no-todo {
+  color: #7b7e82; }
+
+.todo, .todo--temp, .todo--deleted {
+  background: #e7e9ec;
+  color: #333e4b;
+  width: 15rem;
+  margin: 1px;
+  display: flex; }
+
+.todo__delete-button {
+  flex: 0 0 3rem; }
+
+.todo__delete-button--disabled {
+  background: #e7e9ec; }
+
+.todo--temp {
+  opacity: 0.5; }
+
+.todo--deleted {
+  opacity: 0.5; }
+
+.todo__name {
+  padding: 0.5rem;
+  display: block;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
