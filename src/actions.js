@@ -9,7 +9,7 @@ export const actionTypes = {
 import fetch from 'isomorphic-fetch';
 import uid from 'uid';
 
-const apiUrl = process.env.API_URL;
+const apiUrl = '/api';
 
 console.log(apiUrl);
 

@@ -32079,7 +32079,7 @@ var actionTypes = exports.actionTypes = {
   DELETE_TODO_SUCCESS: 'DELETE_TODO_SUCCESS'
 };
 
-var apiUrl = "http://tlapi.todolist.79935455.svc.dockerapp.io:3000";
+var apiUrl = '/api';
 
 console.log(apiUrl);
 
