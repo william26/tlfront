@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "asset": "cp src/index.html dist",
     "css-watch": "node-sass -w --include-path node_modules src/style.scss dist/style.css",
-    "build": "browserify -t babelify -t envify -o dist/index.js src/index.js",
+    "css": "node-sass --include-path node_modules src/style.scss dist/style.css",
+    "build": "npm run asset && npm run css && browserify -t babelify -t envify -o dist/index.js src/index.js",
     "build-watch": "watchify -t babelify -t envify -o dist/index.js src/index.js",
     "watch": "npm run asset && npm run css-watch & npm run build-watch"
   },
